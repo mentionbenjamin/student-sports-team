@@ -1,5 +1,8 @@
 class Team
 
+  attr_reader(:team_name, :players_array)
+  attr_accessor(:coach_name)
+
 
   def initialize(team_name, players_array, coach_name)
     @team_name = team_name
@@ -7,16 +10,11 @@ class Team
     @coach_name = coach_name
   end
 
-  def get_team_name
-    return @team_name
-  end
 
-  def get_players_array
-    return @players_array
-  end
 
-  def get_coach_name
-    return @coach_name
-  end
+  # def add_player(new_player)
+  #   @players_array.push(new_player)
+  # end
+
 
 end
